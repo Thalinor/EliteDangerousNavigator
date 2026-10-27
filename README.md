@@ -50,6 +50,13 @@ Each suite ZIP contains:
 Each plugin is also available as its own ZIP, which you extract the same way.
 Navigator Interface is required by all of them.
 
+Note: Voice Navigator is a work in progress.  It does *NOT* require Voice Attack, HCS Voice Packs,
+or anything else.  It was designed to be a REPLACEMENT for those software packages.
+Unfortunately, I don't have the resources to hire celebrities for voiceovers,
+but feel free to use your own voice packs or windows defaults.  The assistant chatbot built into
+voice navigator is very much still a work in progress and mostly untested at the time of this post. 
+however the voice to key press and TTS responses are working great on my end.  (11/27/26)
+
 ## Safety
 
 - Every ZIP contains readable Python source and text files only. No compiled
