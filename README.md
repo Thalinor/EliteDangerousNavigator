@@ -95,6 +95,8 @@ testing is the next step. Please report bugs with your EDMC log.
 
 
 Co-authored-by: ChatGPT <47575344+chatgpt[bot]@://github.com>
+
 Co-authored-by: Gemini <180519097+gemini-code-assist[bot]@://github.com>
+
 Co-authored-by: Claude <noreply@anthropic.com>
 
