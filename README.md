@@ -29,7 +29,7 @@ anything that controls the ship itself (sorry no "start the frameshift drive aft
 as I was worried that may cross the line and fall under the "No macro ship flight ED TOS".)  The 
 package without the AUTO tag has NO paste macro, so it's not even debatable with that build.
 
-Anyway, both are one just has less features than the other; make a decision pick one or none, 
+Anyway, both are basically the same, one just has less features than the other; make a decision pick one or none, 
 and move on with your life.
 
 Each suite ZIP contains:
