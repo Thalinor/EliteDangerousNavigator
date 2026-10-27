@@ -1,4 +1,4 @@
-Not fully ready for public release, but there here for those who want to try them out.
+Not fully ready for public release, but here for those who want to try them out.
 
 ***I recommend also recommend using the plugins Bioscan and Pioneer, which are NOT my work.  My plugins have though do have options to add styling enhancements to those two plugins as well, as I use them myself.  You can locate/Install them via EDMC's internal Plugin Browser.***
 
