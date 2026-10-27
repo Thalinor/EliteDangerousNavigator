@@ -1,6 +1,6 @@
 Not fully ready for public release, but here for those who want to try them out.
 
-***I recommend and personally use the plugins Bioscan and Pioneer, which are NOT my work.  My plugins have options to add styling enhancements to those two plugins as well.  You can locate/Install them via EDMC's internal Plugin Browser.***
+***I recommend and personally use the plugins Bioscan and Pioneer, which are NOT my work.  My plugins have options to add styling enhancements to those two plugins as well.  You can locate/Install them via EDMC's internal Plugin Browser.  Some of the styling changes should also work with all EDMC plugins, but this is untested***
 
 # Navigator Suite for EDMC - test release, 26 October 2026
 
