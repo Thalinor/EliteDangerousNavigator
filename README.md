@@ -11,19 +11,26 @@ with Claude, ChatGPT and Gemini.
 ## Quick install (recommended)
 
 1. Close EDMC.
-2. Download **one** of the two suite ZIPs:
-   - **Navigator_Suite_2026-10-26_Standard_TEST.zip** includes the standard
-     Neutron Highway Navigator, which copies route systems to your clipboard.
-   - **Navigator_Suite_2026-10-26_Auto_TEST.zip** includes Neutron Highway
-     Navigator Auto, which can also plot the route in the galaxy map for you.
+2. Download all the plugins you plan on using, but only use **one** of the two Neutron Highway Navigator ZIPs:
 3. In EDMC, go to File > Settings > Plugins > Open, which opens your plugins folder.
-   Extract the ZIP directly into that folder. Each plugin is its own folder
+   Extract the ZIP(s) directly into that folder. Each plugin is its own folder
    (for example `plugins\Navigator_Interface\load.py`). There is no extra outer folder.
-4. Start EDMC.
+4. Start EDMC.  New installs require a restart to take effect, but dont worry if you copy
+   plugins into the folder while EDMC is running, it wont break anything EDMC just needs to
+   be restarted to take effect with the new updates.
 
-Install only one Neutron edition. If you switch editions, delete the other
+Again, Install only one Neutron edition. If you switch editions, delete the other
 edition's folder first. Your settings and routes are kept: they are stored in
-EDMC's data folder, not in the plugin folders.
+EDMC's data folder, not in the plugin folders.  One has the same auto copy/paste feature 
+EDCopilot* has had for years, and the other only has copy (you have to manually paste yourself).
+
+FDev doesn't seem to care about the feature in EdCopilot, and I made sure mine didn't include 
+anything that controls the ship itself (sorry no "start the frameshift drive after map paste,
+as I was worried that may cross the line and fall under "No ship control TOS".)  The 
+package with out the AUTO tag has NO paste macro, so that's even debatable with that build.
+
+Anyway, both are one just has less features than the other; make a decision pick one or none, 
+and move on with your life.
 
 Each suite ZIP contains:
 
