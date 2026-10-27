@@ -91,7 +91,7 @@ however the voice to key press and TTS responses are working great on my end.  (
 - Microphone listening and online AI features are off until you turn them on.
 
 ## Development Acknowledgments
-This suite was built by Commander Thalinor in collaboration with ChatGPT (OpenAI) and Gemini (Google) for AI-assisted code creation and debugging.
+This suite was built by Commander Thalinor in collaboration with Claude (Anthropic), ChatGPT (OpenAI), and Gemini (Google) for AI-assisted code creation and debugging.
 
 LMAO.  That line above is Gemini's solution after looping for 15 minutes trying to explain how to add them and ChatGPT to contributors.  
 I'm out of tolkens with my smart kids, so you will have to deal with the "special" one's solution on this, since its not mission critical.
