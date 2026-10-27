@@ -89,6 +89,7 @@ however the voice to key press and TTS responses are working great on my end.  (
   included so anyone can read it.
 - Nothing personal is shipped: no settings, playlists, API keys or journals.
 - Microphone listening and online AI features are off until you turn them on.
+- 
 Tested in EDMC 6.1.2 with a real journal replay: no plugin errors. Live in-game
 testing is the next step. Please report bugs with your EDMC log.
 
