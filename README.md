@@ -24,7 +24,7 @@ edition's folder first. Your settings and routes are kept: they are stored in
 EDMC's data folder, not in the plugin folders.  One has the same auto copy/paste feature 
 EDCopilot* has had for years, and the other only has copy (you have to manually paste yourself).
 
-FDev doesn't seem to care about the feature in EdCopilot, and I made sure mine didn't include 
+*Note: FDev doesn't seem to care about the auto paste feature in EdCopilot, and I made sure mine didn't include 
 anything that controls the ship itself (sorry no "start the frameshift drive after map paste,
 as I was worried that may cross the line and fall under "No ship control TOS".)  The 
 package with out the AUTO tag has NO paste macro, so that's even debatable with that build.
