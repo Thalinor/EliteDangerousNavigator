@@ -26,8 +26,8 @@ EDCopilot* has had for years, and the other only has copy (you have to manually 
 
 *Note: FDev doesn't seem to care about the auto paste feature in EdCopilot, and I made sure mine didn't include 
 anything that controls the ship itself (sorry no "start the frameshift drive after map paste,
-as I was worried that may cross the line and fall under "No ship control TOS".)  The 
-package with out the AUTO tag has NO paste macro, so that's even debatable with that build.
+as I was worried that may cross the line and fall under the "No macro ship flight ED TOS".)  The 
+package without the AUTO tag has NO paste macro, so it's not even debatable with that build.
 
 Anyway, both are one just has less features than the other; make a decision pick one or none, 
 and move on with your life.
