@@ -93,13 +93,7 @@ however the voice to key press and TTS responses are working great on my end.  (
 ## Development Acknowledgments
 This suite was built by Commander Thalinor in collaboration with Claude (Anthropic), ChatGPT (OpenAI), and Gemini (Google) for AI-assisted code creation and debugging.
 
-LMAO.  That line above is Gemini's solution after looping for 15 minutes trying to explain how to add them and ChatGPT to contributors,
-sending me on a wild goose chase with none of the solutions working, until they finally gave up and got "creative".
 
-I'm out of tolkens with my smart kids, so you will have to deal with the "special" one's solution on this, since its not mission critical.
-For the record the code, actual code verification, building, etc, were done with ChatGPT and Claude; Gemini helped for information lookup, so
-there shouldn't be any "creative solutions" like this in the actual code.  Sorry about that, they're all still learning and I like them all,
-just some are more capable than others and that's the understatement of the year...
  
 Tested in EDMC 6.1.2 with a real journal replay: no plugin errors. Live in-game
 testing is the next step. Please report bugs with your EDMC log.
