@@ -1,3 +1,34 @@
+(N) Docking 0.4.6 - TEST BUILD - 30 October 2026
+Docking denials now show even while Docking is hidden away from stations.
+When you request docking from too far out, the game logs only a denial (Reason Distance)
+and no docking request, so Docking used to stay hidden and the warning was never seen.
+Now the panel opens in warning-only mode: the denial, station and what to do (move within
+7.5 km). No schematic, and other panels are not collapsed. It hides again after your
+Denial / timeout display time, or at once if you enter supercruise or jump. Entering the
+no-fire zone or receiving clearance switches to the normal station display.
+New setting (on by default, second in Settings): While hidden, still show docking denials.
+Works with the Navigator Interface 1.2.11 release on GitHub and with (N) Interface 1.2.13+.
+
+Earlier notes:
+(N) Docking 0.4.5 - TEST BUILD - 30 October 2026
+Suite cleanup (phase 2): (N) Interface is the required base, so its shared popup, wrap and
+contrast services replace this plugin's leftover copies. Buttons, menus and Settings pages
+follow one suite standard: clickable text uses EDMC Highlighted Text, plain text Normal Text,
+the selected tab or menu choice is underlined, and accessibility options sit near the bottom of
+Settings, just above the credit line.
+- 2D/3D, Entrance, Pad and Reset view are all Highlighted Text; the selected mode and stage
+  are underlined (previously selected = Highlighted, others = Normal).
+- The Settings preview keeps the diagram's own fonts and colours inside the styled popup.
+- Settings: High Contrast Background now sits above the credit line; Title Case buttons.
+Required companion: (N) Interface 1.2.13 or newer.
+
+(N) Docking 0.4.4 - TEST BUILD - 30 October 2026
+Now listed in EDMC as "(N) Docking" (was "Docking Navigator"). All Navigator suite plugins now
+start with (N), so EDMC shows their settings tabs and panels side by side.
+Your settings, data and saved files are unchanged; nothing needs to be redone.
+Required companion: (N) Interface 1.2.12 or newer (formerly Navigator Interface).
+
+Earlier notes:
 Docking Navigator 0.4.3 — TEST BUILD — 25 OCTOBER 2026
 Required companion: Navigator Interface 1.2.10 or newer.
 Includes the per-plugin High Contrast Background preference, default off,
