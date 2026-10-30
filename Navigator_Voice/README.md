@@ -1,4 +1,4 @@
-# Voice Navigator 0.2.2 — expanded test build
+# (N) Voice 0.2.5 (formerly Voice Navigator) — expanded test build
 
 An EDMarketConnector plugin for offline voice commands and editable multi-step
 macros in Elite Dangerous. Built collaboratively for the Navigator plugin suite.

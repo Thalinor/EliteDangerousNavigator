@@ -1,3 +1,14 @@
+(N) Docking 0.4.7 - TEST BUILD - 30 October 2026
+Folder renamed: this plugin now installs as plugins\Navigator_Docking (was Docking_Navigator).
+All suite folders now start with Navigator_, matching the (N) names in EDMC.
+UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
+(Navigator_Cleanup.bat, from the suite release) once. It moves the old-named folders into
+plugins\_Navigator_old_backup, which EDMC ignores, and copies anything they kept (such as
+Voice backups) into the new folders. Nothing is deleted. If you skip it, EDMC loads both the
+old and the new copy. Your settings, panel order, contrast choices and data are kept.
+Required companion: (N) Interface 1.2.14 or newer (folder Navigator_Interface, unchanged).
+
+Earlier notes:
 (N) Docking 0.4.6 - TEST BUILD - 30 October 2026
 Docking denials now show even while Docking is hidden away from stations.
 When you request docking from too far out, the game logs only a denial (Reason Distance)

@@ -1,3 +1,32 @@
+(N) Interface 1.2.14 - TEST BUILD - 30 October 2026
+Interface keeps its folder. It now carries saved panel order, layout profiles, custom
+headers, collapse memory and High Contrast choices over to the renamed folders.
+All suite folders now start with Navigator_, matching the (N) names in EDMC.
+UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
+(Navigator_Cleanup.bat, from the suite release) once. It moves the old-named folders into
+plugins\_Navigator_old_backup, which EDMC ignores, and copies anything they kept (such as
+Voice backups) into the new folders. Nothing is deleted. If you skip it, EDMC loads both the
+old and the new copy. Your settings, panel order, contrast choices and data are kept.
+This is the required base plugin for every (N) plugin.
+
+Earlier notes:
+(N) Interface 1.2.13 - TEST BUILD - 30 October 2026
+Suite cleanup (phase 2): (N) Interface is the required base, so its shared popup, wrap and
+contrast services replace this plugin's leftover copies. Buttons, menus and Settings pages
+follow one suite standard: clickable text uses EDMC Highlighted Text, plain text Normal Text,
+the selected tab or menu choice is underlined, and accessibility options sit near the bottom of
+Settings, just above the credit line.
+navigator_attach_window is tidied (no behaviour change). Button labels use the suite ellipsis.
+Required companion: (N) Interface 1.2.13 or newer.
+
+(N) Interface 1.2.12 - TEST BUILD - 30 October 2026
+Now listed in EDMC as "(N) Interface" (was "Navigator Interface"). All Navigator suite plugins now
+start with (N), so EDMC shows their settings tabs and panels side by side.
+Your settings, data and saved files are unchanged; nothing needs to be redone.
+This is the required base plugin for every (N) plugin. Other suite plugins find it by its new
+name and still accept the old one.
+
+Earlier notes:
 Navigator Interface 1.2.11 — TEST BUILD — 26 OCTOBER 2026
 Cleanup: the list of suite plugins no longer names any unreleased edition.
 No behaviour change.

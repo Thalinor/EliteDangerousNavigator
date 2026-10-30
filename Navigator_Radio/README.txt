@@ -1,3 +1,31 @@
+(N) Radio 0.1.13 - TEST BUILD - 30 October 2026
+Folder renamed: this plugin now installs as plugins\Navigator_Radio (was Ship_Radio).
+All suite folders now start with Navigator_, matching the (N) names in EDMC.
+UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
+(Navigator_Cleanup.bat, from the suite release) once. It moves the old-named folders into
+plugins\_Navigator_old_backup, which EDMC ignores, and copies anything they kept (such as
+Voice backups) into the new folders. Nothing is deleted. If you skip it, EDMC loads both the
+old and the new copy. Your settings, panel order, contrast choices and data are kept.
+Required companion: (N) Interface 1.2.14 or newer (folder Navigator_Interface, unchanged).
+
+Earlier notes:
+(N) Radio 0.1.12 - TEST BUILD - 30 October 2026
+Suite cleanup (phase 2): (N) Interface is the required base, so its shared popup, wrap and
+contrast services replace this plugin's leftover copies. Buttons, menus and Settings pages
+follow one suite standard: clickable text uses EDMC Highlighted Text, plain text Normal Text,
+the selected tab or menu choice is underlined, and accessibility options sit near the bottom of
+Settings, just above the credit line.
+- Settings: Playback (volume, start-up and pause options) is now the first section.
+- Removed a leftover wrap reset; the now-playing lines were already one-line labels.
+Required companion: (N) Interface 1.2.13 or newer.
+
+(N) Radio 0.1.11 - TEST BUILD - 30 October 2026
+Now listed in EDMC as "(N) Radio" (was "Ship Radio"). All Navigator suite plugins now
+start with (N), so EDMC shows their settings tabs and panels side by side.
+Your settings, data and saved files are unchanged; nothing needs to be redone.
+Required companion: (N) Interface 1.2.12 or newer (formerly Navigator Interface).
+
+Earlier notes:
 Ship Radio 0.1.10 — TEST BUILD — 25 OCTOBER 2026
 Required companion: Navigator Interface 1.2.10 or newer.
 Compact track display and unchanged-icon guards; includes suite high-contrast preference.

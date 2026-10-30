@@ -1,3 +1,14 @@
+(N) Dashboard 0.6.15 - TEST BUILD - 30 October 2026
+Folder renamed: this plugin now installs as plugins\Navigator_Dashboard (was Ship_Computer).
+All suite folders now start with Navigator_, matching the (N) names in EDMC.
+UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
+(Navigator_Cleanup.bat, from the suite release) once. It moves the old-named folders into
+plugins\_Navigator_old_backup, which EDMC ignores, and copies anything they kept (such as
+Voice backups) into the new folders. Nothing is deleted. If you skip it, EDMC loads both the
+old and the new copy. Your settings, panel order, contrast choices and data are kept.
+Required companion: (N) Interface 1.2.14 or newer (folder Navigator_Interface, unchanged).
+
+Earlier notes:
 (N) Dashboard 0.6.14 - TEST BUILD - 30 October 2026
 Jump Rate now measures travel. It divides by the time between your jumps, so stops (docking,
 fuel stops, a break) no longer drag it down, and it no longer ticks down while you fly around

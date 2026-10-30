@@ -2,7 +2,7 @@ Not fully ready for public release, but here for those who want to try them out.
 
 ***I recommend and personally use the plugins Bioscan and Pioneer, which are NOT my work.  My plugins have options to add styling enhancements to those two plugins as well.  You can locate/Install them via EDMC's internal Plugin Browser.  Some of the styling changes should also work with all EDMC plugins, but this is untested***
 
-# Navigator Suite for EDMC - test release, 26 October 2026
+# Navigator Suite for EDMC - test release, 30 October 2026
 
 These are plugins for [EDMarketConnector](https://github.com/EDCD/EDMarketConnector)
 (EDMC), the companion app for Elite Dangerous. They are built by Commander Thalinor
@@ -36,14 +36,27 @@ Each suite ZIP contains:
 
 | Plugin | Version | Panel |
 | --- | --- | --- |
-| Navigator Interface (required) | 1.2.11 | Styles the whole window, Commander Profile |
-| (N) Dashboard (formerly Ship Computer) | 0.6.14 | Dashboard |
-| Systems Navigator | 0.3.8 | Cartography |
-| (N) Docking (formerly Docking Navigator) | 0.4.6 | Docking (appears automatically) |
-| Ship Radio | 0.1.10 | Radio |
-| Voice Navigator | 0.2.2 | Voice Navigator |
-| Neutron Highway Navigator (Standard ZIP) | 1.4.4 | Neutron Highway Navigator |
-| Neutron Highway Navigator Auto (Auto ZIP) | 0.20.4 | Neutron Highway Navigator |
+| (N) Interface (required) | 1.2.14 | Styles the whole window, Commander Profile |
+| (N) Dashboard | 0.6.15 | Dashboard |
+| (N) Cartography | 0.3.11 | Cartography |
+| (N) Docking | 0.4.7 | Docking (appears automatically) |
+| (N) Radio | 0.1.13 | Radio |
+| (N) Voice | 0.2.5 | Voice |
+| (N) Neutron Highway (Standard ZIP) | 1.4.7 | Neutron Highway |
+| (N) Neutron Highway Auto (Auto ZIP) | 0.20.7 | Neutron Highway |
+
+All suite plugins now start with **(N)** in EDMC, so their settings tabs and panels sit side by side.
+Their folders start with `Navigator_` to match.
+
+## Upgrading from a build before 30 October 2026
+
+The plugin folders were renamed (for example `Systems_Navigator` is now `Navigator_Cartography`).
+After extracting the new ZIPs, close EDMC and run the cleanup tool once: open `_Navigator_Cleanup`
+in your plugins folder and double-click `Navigator_Cleanup.bat`. It is included in the suite ZIPs and
+attached to every plugin release. It moves the old folders into `plugins\_Navigator_old_backup`,
+which EDMC ignores, and copies anything they kept (such as Voice backups) into the new folders.
+It deletes nothing. If you skip it, EDMC loads both the old and the new copies.
+Your settings, routes, odometer, panel order and other choices are kept.
 
 ## Downloads
 
@@ -52,15 +65,16 @@ All releases are listed on the [Releases page](https://github.com/Thalinor/Elite
 
 | Plugin | Page | Download |
 | --- | --- | --- |
-| **Navigator Suite (all plugins)** | this page | [Suite 2026-10-26](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-suite-2026-10-26) (Standard or Auto bundle) |
-| Navigator Interface (required) | [README](Navigator_Interface) | [1.2.11](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-interface-v1.2.11) |
-| (N) Dashboard (formerly Ship Computer) | [README](Ship_Computer) | [0.6.14](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/ship-computer-v0.6.14) |
-| Systems Navigator | [README](Systems_Navigator) | [0.3.8](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/systems-navigator-v0.3.8) |
-| (N) Docking (formerly Docking Navigator) | [README](Docking_Navigator) | [0.4.6](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/docking-navigator-v0.4.6) |
-| Ship Radio | [README](Ship_Radio) | [0.1.10](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/ship-radio-v0.1.10) |
-| Voice Navigator | [README](Voice_Navigator) | [0.2.2](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/voice-navigator-v0.2.2) |
-| Neutron Highway Navigator | [README](Neutron_Highway_Navigator) | [1.4.4](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/neutron-highway-navigator-v1.4.4) |
-| Neutron Highway Navigator Auto | [README](Neutron_Highway_Navigator_Auto) | [0.20.4](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/neutron-highway-navigator-auto-v0.20.4) |
+| **Navigator Suite (all plugins)** | this page | [Suite 2026-10-30](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-suite-2026-10-30) (Standard or Auto bundle) |
+| (N) Interface (required) | [README](Navigator_Interface) | [1.2.14](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-interface-v1.2.14) |
+| (N) Dashboard | [README](Navigator_Dashboard) | [0.6.15](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-dashboard-v0.6.15) |
+| (N) Cartography | [README](Navigator_Cartography) | [0.3.11](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-cartography-v0.3.11) |
+| (N) Docking | [README](Navigator_Docking) | [0.4.7](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-docking-v0.4.7) |
+| (N) Radio | [README](Navigator_Radio) | [0.1.13](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-radio-v0.1.13) |
+| (N) Voice | [README](Navigator_Voice) | [0.2.5](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-voice-v0.2.5) |
+| (N) Neutron Highway | [README](Navigator_Neutron_Highway) | [1.4.7](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-neutron-highway-v1.4.7) |
+| (N) Neutron Highway Auto | [README](Navigator_Neutron_Highway_Auto) | [0.20.7](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-neutron-highway-auto-v0.20.7) |
+| Folder cleanup tool (upgrading) | [README](_Navigator_Cleanup) | included in every release above |
 
 Each release lists the SHA-256 checksum of its ZIP so you can verify your download.
 
@@ -80,7 +94,8 @@ however the voice to key press and TTS responses are working great on my end.  (
 ## Safety
 
 - Every ZIP contains readable Python source and text files only. No compiled
-  programs (.exe or .dll) are included.
+  programs (.exe or .dll) are included. The folder cleanup tool is a short, readable
+  PowerShell script (Navigator_Cleanup.ps1) started by a one-line .bat file.
 - Ship Radio uses Windows' own media player and voice through a hidden PowerShell
   helper. Nothing is installed.
 - Voice Navigator builds its small speech helper on your PC from the included

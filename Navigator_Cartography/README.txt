@@ -1,4 +1,47 @@
-Systems Navigator 0.3.8 - 26 October 2026
+(N) Cartography 0.3.11 - TEST BUILD - 30 October 2026
+Folder renamed: this plugin now installs as plugins\Navigator_Cartography (was Systems_Navigator).
+All suite folders now start with Navigator_, matching the (N) names in EDMC.
+UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
+(Navigator_Cleanup.bat, from the suite release) once. It moves the old-named folders into
+plugins\_Navigator_old_backup, which EDMC ignores, and copies anything they kept (such as
+Voice backups) into the new folders. Nothing is deleted. If you skip it, EDMC loads both the
+old and the new copy. Your settings, panel order, contrast choices and data are kept.
+Required companion: (N) Interface 1.2.14 or newer (folder Navigator_Interface, unchanged).
+
+Earlier notes:
+(N) Cartography 0.3.10 - TEST BUILD - 30 October 2026
+Suite cleanup (phase 2): (N) Interface is the required base, so its shared popup, wrap and
+contrast services replace this plugin's leftover copies. Buttons, menus and Settings pages
+follow one suite standard: clickable text uses EDMC Highlighted Text, plain text Normal Text,
+the selected tab or menu choice is underlined, and accessibility options sit near the bottom of
+Settings, just above the credit line.
+- Subcategory choices are all Highlighted Text (clickable); the selected one is underlined.
+  Main tabs are Highlighted with the selected tab underlined, as before.
+- The station-data offer uses the standard popup buttons.
+Required companion: (N) Interface 1.2.13 or newer.
+
+(N) Cartography 0.3.9 - 30 October 2026
+Now listed in EDMC as "(N) Cartography" (was "Systems Navigator"). All Navigator suite plugins now
+start with (N), so EDMC shows their settings tabs and panels side by side.
+Your settings, data and saved files are unchanged; nothing needs to be redone.
+Required companion: (N) Interface 1.2.12 or newer (formerly Navigator Interface).
+Objects lists now mark engineers, material traders and technology brokers:
+  ⚙(E)  engineer workshop (38 bases, built in and verified against Spansh)
+  ⇄(M-R) / (M-M) / (M-E)  Raw / Manufactured / Encoded material trader
+  ◈(T-G) / (T-H)  Guardian / Human technology broker; (T) when the type is unknown
+Names are highlighted (engineers blue, traders/brokers green; darker shades on
+light themes). Clicking a name still copies only the station name.
+Settings (all on by default): show the codes, highlight engineers, highlight
+trader/broker stations.
+Station data: on first start Cartography asks whether to download the known
+trader/broker stations once (about 300 KB, ~7,000 stations, from the Navigator
+GitHub releases) or build the list as you visit. Either way the list grows from
+your journals and EDSM visits with no extra requests. The download is offered
+again only from settings and happens at most once.
+Note: the journal's "engineer" station service is the remote Workshop found at
+most stations, so it is deliberately not treated as an engineer base.
+
+Earlier in 0.3.8 (26 October 2026):
 Cleanup: removed a duplicate lookup in the Exploration overview.
 
 Earlier in 0.3.7 (25 October 2026):
