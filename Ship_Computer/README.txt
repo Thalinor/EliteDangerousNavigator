@@ -1,3 +1,38 @@
+(N) Dashboard 0.6.14 - TEST BUILD - 30 October 2026
+Jump Rate now measures travel. It divides by the time between your jumps, so stops (docking,
+fuel stops, a break) no longer drag it down, and it no longer ticks down while you fly around
+a star. It only changes when you jump. A gap counts as a stop when it is longer than 3x your
+standard jump time (the same rule Neutron Highway uses for its ETA).
+New settings (Trip section):
+- Jump Rate: include stop time (trading and mining). Off by default. On gives the previous
+  behaviour: divide by the whole Trip Time, so time spent docking and between stations shows.
+- Standard jump time (default 80 s) and Standard neutron jump time (default 120 s), arrival
+  to arrival. Neutron/white-dwarf boosted jumps use the second value.
+Until two jump-to-jump gaps are measured, Jump Rate shows ~ your standard pace x this trip's
+average jump. A trip already in progress gets its travel time rebuilt once from your journals.
+
+Earlier notes:
+(N) Dashboard 0.6.13 - TEST BUILD - 30 October 2026
+Suite cleanup (phase 2): (N) Interface is the required base, so its shared popup, wrap and
+contrast services replace this plugin's leftover copies. Buttons, menus and Settings pages
+follow one suite standard: clickable text uses EDMC Highlighted Text, plain text Normal Text,
+the selected tab or menu choice is underlined, and accessibility options sit near the bottom of
+Settings, just above the credit line.
+- The recipe popup's size and position are now remembered by (N) Interface alone. Your old
+  recipe_window.json is no longer read; the popup opens at its default size once.
+- Stopwatch Start/Lap/Reset and the Synthesis group choices use Highlighted Text; the selected
+  group is underlined. Reset Trip stays Normal Text (your deliberate exception).
+- The EDSM import dialog follows the dark popup style. Settings: everyday options first,
+  High Contrast Background above the credit line, and a standard 'Re-read All Journals' button.
+Required companion: (N) Interface 1.2.13 or newer.
+
+(N) Dashboard 0.6.12 - TEST BUILD - 30 October 2026
+Now listed in EDMC as "(N) Dashboard" (was "Ship Computer"). All Navigator suite plugins now
+start with (N), so EDMC shows their settings tabs and panels side by side.
+Your settings, data and saved files are unchanged; nothing needs to be redone.
+Required companion: (N) Interface 1.2.12 or newer (formerly Navigator Interface).
+
+Earlier notes:
 Ship Computer 0.6.11 — TEST BUILD — 26 OCTOBER 2026
 Labels are only rewritten when their text changes, so journal updates and
 the 30-second refresh no longer repaint unchanged lines.

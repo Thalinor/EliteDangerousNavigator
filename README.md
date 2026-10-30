@@ -37,7 +37,7 @@ Each suite ZIP contains:
 | Plugin | Version | Panel |
 | --- | --- | --- |
 | Navigator Interface (required) | 1.2.11 | Styles the whole window, Commander Profile |
-| Ship Computer | 0.6.11 | Dashboard |
+| (N) Dashboard (formerly Ship Computer) | 0.6.14 | Dashboard |
 | Systems Navigator | 0.3.8 | Cartography |
 | (N) Docking (formerly Docking Navigator) | 0.4.6 | Docking (appears automatically) |
 | Ship Radio | 0.1.10 | Radio |
@@ -54,7 +54,7 @@ All releases are listed on the [Releases page](https://github.com/Thalinor/Elite
 | --- | --- | --- |
 | **Navigator Suite (all plugins)** | this page | [Suite 2026-10-26](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-suite-2026-10-26) (Standard or Auto bundle) |
 | Navigator Interface (required) | [README](Navigator_Interface) | [1.2.11](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-interface-v1.2.11) |
-| Ship Computer | [README](Ship_Computer) | [0.6.11](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/ship-computer-v0.6.11) |
+| (N) Dashboard (formerly Ship Computer) | [README](Ship_Computer) | [0.6.14](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/ship-computer-v0.6.14) |
 | Systems Navigator | [README](Systems_Navigator) | [0.3.8](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/systems-navigator-v0.3.8) |
 | (N) Docking (formerly Docking Navigator) | [README](Docking_Navigator) | [0.4.6](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/docking-navigator-v0.4.6) |
 | Ship Radio | [README](Ship_Radio) | [0.1.10](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/ship-radio-v0.1.10) |
