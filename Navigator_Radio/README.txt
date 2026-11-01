@@ -1,4 +1,7 @@
-(N) Radio 0.1.13 - TEST BUILD - 30 October 2026
+(N) Radio 0.1.15 - TEST BUILD - 31 October 2026
+NEW 0.1.15: The small filled circle beside the Radio header is gone. It only marked an unread Galnet article, so it meant nothing while playing streams and only cleared once you changed source. Galnet playback itself is unchanged.
+(0.1.14, 30 October 2026)
+Settings now use Navigator Interface's shared scrolling service; its table-specific scrollbars remain local.
 Folder renamed: this plugin now installs as plugins\Navigator_Radio (was Ship_Radio).
 All suite folders now start with Navigator_, matching the (N) names in EDMC.
 UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
@@ -94,7 +97,7 @@ Settings, private stations and caches live separately in EDMC application data.
 This build preserves existing settings and uses Windows' built-in audio/voice.
 
 THE PANEL
-Header: Radio, unread-Galnet dot, stock collapse button (plus controls when collapsed). The settings cog is
+Header: Radio, stock collapse button (plus controls when collapsed). The settings cog is
 removed: all configuration is under File > Settings > Ship Radio.
 First body line: source  |  available matching controls, centered as one compact
 group across the panel. There is no fixed split or expanding source column.
@@ -229,3 +232,9 @@ High Contrast Backgrounds (25 October 2026)
 High Contrast Background is available on this plugin's EDMC settings page
 and defaults off. Navigator Interface applies it and can force it on for all
 main plugin panels. Turning off the force option restores individual choices.
+
+License and credits
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor"), licensed GPL-3.0-or-later (see LICENSE).
+Humans + AI = Future. Built by Commander Thalinor in open collaboration with AI:
+Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). We say so proudly.
+See CREDITS.txt for more.

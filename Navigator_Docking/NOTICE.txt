@@ -1,0 +1,25 @@
+Docking Navigator 0.2.0
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor") and contributors.
+SPDX-License-Identifier: GPL-3.0-or-later
+
+This program is free software: you can redistribute it and/or modify it under
+the GNU General Public License, version 3 or (at your option) any later
+version. It is distributed without warranty. See LICENSE.
+
+Original work in this project: procedural wireframe meshes; antialiased RGBA
+renderer and PNG encoder; independent 2D/3D UI; camera controls; journal state
+machine; docking suggestions; settings and isolated previews.
+
+Pad index tables and carrier coordinate reference adapted from LandingPad:
+Copyright (C) 2018 Bernd Gollesch.
+https://github.com/bgol/LandingPad
+Original license: GPL-2.0-or-later.
+No upstream graphics, sprites, canvas/overlay rendering code or visual assets
+are included. The pad reference data is retained with attribution. New 3D
+depth placement is schematic and does not claim measured geometry.
+
+Docking Denied Reason, by Inutt and contributors:
+https://gitlab.com/inutt/edmc-docking-denied-reason
+Original license: GPL-3.0-or-later.
+Acknowledged for denial-code reference and feature inspiration. This plugin
+provides its own state/UI implementation and does not depend on that plugin.

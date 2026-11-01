@@ -1,4 +1,10 @@
-(N) Voice 0.2.5 - TEST BUILD - 30 October 2026
+(N) Voice 0.2.8 - TEST BUILD - 31 October 2026
+NEW 0.2.8: The collapse (minimise) button is Normal Text colour like every other plugin's, instead of Highlighted Text. Nothing else about its colours changed: the Listen button still shows Highlighted while listening and Normal while stopped (or green/red if 'listen status colours' is on).
+Finds the route plugin under its new name, (N) Navigation (folder Navigator_Navigation).
+
+Earlier notes:
+(N) Voice 0.2.6 - TEST BUILD - 30 October 2026
+Settings now use Navigator Interface's shared scrolling service.
 Folder renamed: this plugin now installs as plugins\Navigator_Voice (was Voice_Navigator).
 All suite folders now start with Navigator_, matching the (N) names in EDMC.
 UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
@@ -183,3 +189,9 @@ The header has the suite's stock collapse control. Closing/collapsing a panel
 does not imply a listening stop: press Stop Listening to stop the microphone.
 To uninstall, close EDMC and move the Voice_Navigator plugin folder out of the
 plugins directory. Configuration can remain for later reinstallation.
+
+License and credits
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor"), licensed GPL-3.0-or-later (see LICENSE).
+Humans + AI = Future. Built by Commander Thalinor in open collaboration with AI:
+Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). We say so proudly.
+See CREDITS.txt for more.

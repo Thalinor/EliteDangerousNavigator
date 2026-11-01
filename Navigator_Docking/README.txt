@@ -1,4 +1,5 @@
-(N) Docking 0.4.7 - TEST BUILD - 30 October 2026
+(N) Docking 0.4.8 - TEST BUILD - 30 October 2026
+Settings now use Navigator Interface's shared scrolling service.
 Folder renamed: this plugin now installs as plugins\Navigator_Docking (was Docking_Navigator).
 All suite folders now start with Navigator_, matching the (N) names in EDMC.
 UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
@@ -230,3 +231,9 @@ High Contrast Backgrounds (25 October 2026)
 High Contrast Background is available on this plugin's EDMC settings page
 and defaults off. Navigator Interface applies it and can force it on for all
 main plugin panels. Turning off the force option restores individual choices.
+
+License and credits
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor"), licensed GPL-3.0-or-later (see LICENSE).
+Humans + AI = Future. Built by Commander Thalinor in open collaboration with AI:
+Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). We say so proudly.
+See CREDITS.txt for more.

@@ -7,8 +7,9 @@ The Navigator suite's plugin folders were renamed so they match their names in E
   Docking_Navigator                  -> Navigator_Docking
   Ship_Radio                         -> Navigator_Radio
   Voice_Navigator                    -> Navigator_Voice
-  Neutron_Highway_Navigator          -> Navigator_Neutron_Highway
-  Neutron_Highway_Navigator_Auto     -> Navigator_Neutron_Highway_Auto
+  Neutron_Highway_Navigator          -> Navigator_Navigation   (the Standard and Auto route editions
+  Neutron_Highway_Navigator_Auto     -> Navigator_Navigation    are now one plugin, (N) Navigation)
+  Navigator_Neutron_Highway(_Auto)   -> Navigator_Navigation   (builds from earlier on 30-31 October)
   Navigator_Interface                (unchanged)
 
 After installing the new plugins, the old folders are still in your plugins folder, and EDMC

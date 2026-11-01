@@ -1,4 +1,15 @@
-(N) Dashboard 0.6.15 - TEST BUILD - 30 October 2026
+(N) Dashboard 0.6.19 - TEST BUILD - 31 October 2026
+
+NEW 0.6.19: the Trip rate reads J/hr (jumps an hour) and Ly/hr, with the word Jumps dropped.
+0.6.18: plugin headers are always Normal Text colour, even when clickable (suite styling rule).
+
+New setting (Dashboard's own Settings page): "Trip tab: hide the Reset Trip line (click the Dashboard header to reset the trip
+instead)". When on, the Reset Trip line disappears and the Dashboard header becomes clickable (it stays in the normal text colour, like every plugin header) and asks
+"Reset the trip time, jumps, systems, distance and landings to zero?" Off (default): nothing changes. Required companion:
+(N) Interface 1.2.30 or newer.
+
+(N) Dashboard 0.6.16 - TEST BUILD - 30 October 2026
+Settings now use Navigator Interface's shared scrolling service.
 Folder renamed: this plugin now installs as plugins\Navigator_Dashboard (was Ship_Computer).
 All suite folders now start with Navigator_, matching the (N) names in EDMC.
 UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
@@ -469,3 +480,9 @@ High Contrast Backgrounds (25 October 2026)
 High Contrast Background is available on this plugin's EDMC settings page
 and defaults off. Navigator Interface applies it and can force it on for all
 main plugin panels. Turning off the force option restores individual choices.
+
+License and credits
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor"), licensed GPL-3.0-or-later (see LICENSE).
+Humans + AI = Future. Built by Commander Thalinor in open collaboration with AI:
+Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). We say so proudly.
+See CREDITS.txt for more.

@@ -1,4 +1,61 @@
-(N) Interface 1.2.14 - TEST BUILD - 30 October 2026
+(N) Interface 1.2.59 - TEST BUILD
+NEW 1.2.59: (1) A thin line in your Normal Text colour now runs across the foot of the window, just above the resize triangle, on the Dark and Transparent themes, so the window is capped at the bottom as it is at the top. (2) A shared green / yellow / red scan colour for plugins (used by the Cartography Visited line); the accessibility setting (use theme colours) turns it off.
+
+NEW 1.2.58: a plugin can ask Interface for the outline colour of a flat suite button (used by the Navigation shortcut bar).
+
+NEW 1.2.57: a plugin can keep the copy/auto A button clear of one more box beside its collapse arrow (the Navigation S button sits there).
+
+NEW 1.2.56: FLAT BUTTONS. On the dark and Transparent themes every plain button in the plugin panels (collapse, A, R, cog, the shortcut bar, Tools) is flat with a thin outline in your Normal Text colour, instead of Tk's raised 3D bevel, whose light top and left edges showed white. The Default theme keeps its native buttons.
+NEW 1.2.55: New option (Settings > Interface, off by default): 'Transparent theme: make the title bar and Commander Profile header see-through too'. With it on the whole header is as see-through as the rest, and you can drag the window only by clicking exactly on the letters of the title or of 'Commander Profile' (Windows passes the mouse through see-through pixels). The default is unchanged: a solid black strip while the window is see-through, the window's grey while the pointer is over it.
+NEW 1.2.54: Transparent theme: the minimise and close pictures were still see-through (their own background is the see-through colour); they now take the strip's colour like the rest of it.
+NEW 1.2.53: Fix for 1.2.52: the cog stretched across the title bar and hid the title text; it is now only as wide as its icon (still as tall as the title).
+NEW 1.2.52: Transparent theme header: the minimise, close and cog buttons are now as tall as the title bar, so the strip no longer steps down at its right end; the collapse button of a collapsed Commander Profile joins the strip the same way.
+NEW 1.2.51: Transparent theme title bar colours: while the window is see-through the strip is black (so it can be grabbed); while the window is solid (pointer over it) the strip, the minimise/close buttons and the cog take the window's own colour, so nothing looks notched. With 'stay see-through' ticked nothing is painted at all (the title bar is see-through and can only be grabbed by its letters). (N) Tools typing boxes follow the same rule.
+NEW 1.2.50: Transparent theme header tidy-up. (1) The title bar strip now starts and ends exactly where the panel rows do (before, it stuck out about 5 px on the left). (2) The minimise and close buttons are part of the same solid strip, flush against each other. (3) The Settings cog on the title bar is now a small label, as small as the minimise and close buttons and sitting right beside them (it was a big boxed button). The cog beside the Commander Profile's collapse button (when the title bar is hidden too) is unchanged. Note: over the game the strip is black and blends in; over a grey window it shows as a black strip, because it has to be solid to be grabbed (see-through pixels pass the mouse to whatever is underneath). - 31 October 2026
+NEW 1.2.49: Knows the new (N) Tools plugin as part of the suite.
+NEW 1.2.48: The Settings cog button now has exactly the same edges as the collapse, R and A buttons (light edge top and left only) instead of a full square border; it copies them from a real button.
+NEW 1.2.47: Transparent theme: the whole header block (title, minimise and close buttons, File/Edit/Help) is one solid black strip, so the minimise and close buttons no longer sit on a grey or see-through patch beside the title.
+NEW 1.2.46: The title bar and the Commander Profile drag strip are now pure black (they were one shade off black, which showed as grey against the dark game behind the glass).
+NEW 1.2.45: The black title bar can no longer be repainted grey by EDMC (its own repaint is overruled while the Transparent theme is on).
+NEW 1.2.44: In the Transparent theme the E:D Market Connector title bar is now black at all times (it went grey while the window was solid), matching the area behind the minimise and close buttons.
+NEW 1.2.43: (1) The Settings cog is now a real button in its own box, like the collapse button beside it (same size and padding). (2) The Station line says 'Undocked' (Normal Text colour) instead of a bare x while you are not at a station. (3) The Transparent glass now also checks the pointer position four times a second (it only reads the position; nothing is redrawn unless the glass has to change), so a mouse or finger left resting on the window no longer depends on enter/leave events.
+
+NEW 1.2.42: (1) The Transparent window is solid only while the MOUSE POINTER is over it (before, keyboard focus counted too, so it never went see-through while EDMC had focus). (2) The Settings cog now also appears when BOTH the title bar and the menu are hidden: it sits on the Commander Profile row beside its collapse button (with only the menu hidden it stays on the title bar). Hidden while the menu is revealed with Alt.
+
+NEW 1.2.41: (1) The Commander Profile header (when collapsed) drags the window too, like the title bar; the master scroll leaves presses there alone. (2) MOUSE CURSOR: in the Transparent theme the cursor vanished over see-through gaps (Windows gives the pointer to the game window underneath, and the game hides it). The window now turns solid while the pointer is over it (as EDMC itself does) and goes back to glass when you move away. Settings > Interface: 'Transparent theme: stay see-through while the mouse is over EDMC' keeps the glass at all times (the cursor can then vanish over the gaps).
+
+1.2.40: (1) DRAGGING: in the Transparent theme the whole title bar can be grabbed again (it now has a solid, almost black backdrop; before, only the letters themselves could be, because Windows passes clicks through see-through pixels). (2) SETTINGS BUTTON: Settings > Interface has a new box under the two hide boxes - when the menu is hidden, a Settings cog (gear) sits on the title bar beside the minimise button and opens EDMC's own Settings. Appears only while the title bar shows and the menu is hidden. 1.2.39: in the Dark and Transparent themes, with neither hide box ticked, the title bar and File/Edit/Help menu now STAY SHOWN (EDMC hid them whenever the pointer left the window). Tick Hide to hide them until Alt. The normal theme is unchanged. 1.2.38: internal clean-up. 1.2.37: the master scroll bar uses your Normal Text colour (not the bright Highlighted one), and a clear gap of one bar width keeps it off the text (transparent in the Transparent theme, the panel colour in Dark). 1.2.36: the master scroll bar now shows only while you scroll (wheel, swipe, drag) and fades away after about a second; moving the pointer to its edge brings it back so it can be dragged. Longer bar, more ticks. It is on the LEFT by default (clear of the buttons on the right). Settings > Interface > Small screens: scroll bar side Left / Right, and Never show the scroll bar (scrolling still works). 1.2.35: swipe or drag anywhere in the window (empty space or on a word) to scroll the whole window while the master scroll is on; a plain tap still taps. Inside a plugin's own scrolling box that box scrolls itself, except within about 40 px of the bar's edge, where the whole window always scrolls. A swipe that starts on a clickable word may also trigger that word's tap. 1.2.34: the master scroll bar is now 3 px wide with nothing around it, so it no longer covers plugin buttons. 1.2.33 (PROTOTYPE): MASTER SCROLL (also starts when you drag the window shorter than its content, or lock a shorter height, not only when it is taller than the screen) for small screens, Dark and Transparent themes only. When the plugins are expanded so far that EDMC's window would be taller than the usable screen, the window is held to the screen height and the content scrolls behind a thin bar (your Highlighted Text colour, thicker solid middle with dashes thinning toward each end) on the right edge, or the left (Settings > Interface > Small screens). Scroll with the mouse wheel, drag the bar, or tap the empty track to jump. The bar exists only while it is needed; when everything fits, EDMC lays itself out as before. Anything going wrong switches it off for the session and restores the layout; details go to EDMC's log (lines starting 'Master scroll'). Also: (N) tag and fuel colour rules from 1.2.31.
+
+Required companion for every other Navigator plugin. New since 1.2.15:
+- Galaxy map shortcuts (optional, OFF by default): Settings > (N) Interface > Galaxy map shortcuts. When on, plugins that
+  deal in star systems (Navigation) get a small copy/auto button in their header: the copy symbol means a click copies a
+  name; a green A means a click puts the name into the galaxy map search and plots a route to it. "One copy/auto choice for
+  every plugin" makes any such button switch them all together.
+- Only the galaxy map MENU is ever driven: open the map with your own map key, click the search box, paste the name, press
+  Enter, click the first result, click Plot Route, and back out with Esc. Never ship controls, targeting, honking or the FSD.
+- Train Map Clicks (button in that section, also in Navigation's menu): one shared window to set your map key and where the
+  search box, first result and Plot Route sit on screen (plus two optional jet-cone clicks). Train once; every plugin uses it.
+  Training from the earlier Neutron Highway Auto edition is picked up automatically (that file is only read, never changed).
+- Closing the map now waits for the game to report the cockpit after each Esc before pressing again (the old code could
+  press one Esc too many and open the pause menu).
+- One accessibility setting: "Use theme colours instead of red/green/blue for status buttons (colour-blind friendly)". It
+  covers the green A, the Auto-Route R, Navigation's route lamp and bar, and the blue neutron count: on = your Highlighted Text
+  colour, off = your Normal Text colour. The Auto-Route R is also struck through when off, so it reads without colour.
+- Text style for the dark and transparent themes: Follow EDMC (default), Normal text, or ALL CAPITALS. EDMC gives the
+  transparent theme all capitals and dark normal text, which changes how much room every plugin needs; choose Normal text to fit
+  a small screen. Applied inside EDMC's own theme pass, so there is no extra refreshing.
+- Popup menus (such as Navigation's) follow the dark/transparent theme instead of showing white.
+- Settings that affect only one plugin now live on that plugin's own page (the header cog option is on Navigation's page).
+  Interface's page keeps only what affects every plugin. Options for other developers' plugins (BioScan, Pioneer) appear only
+  while that plugin is installed.
+- Removed: the "Use Exobiology/Geology header" checkboxes. Custom Headers (below) renames any plugin's header the same way.
+- Folders: Navigator_Neutron_Highway and Navigator_Neutron_Highway_Auto are now one plugin, Navigator_Navigation; saved panel
+  order, layouts and custom headers carry over.
+- Shared services for the other plugins: scrollable Settings pages, popup styling and positions, panel contrast, header
+  boxes (copy/auto, cog), menu theming and status colours.
+
+(N) Interface 1.2.15 - TEST BUILD - 30 October 2026
+Interface now provides the shared scrollable Settings page service used across the suite.
 Interface keeps its folder. It now carries saved panel order, layout profiles, custom
 headers, collapse memory and High Contrast choices over to the renamed folders.
 All suite folders now start with Navigator_, matching the (N) names in EDMC.
@@ -297,3 +354,9 @@ through the user's shared builds. Human + AI = Future
 High Contrast Backgrounds (25 October 2026)
 Force High Contrast Backgrounds on All Plugins overrides each plugin's own choice without changing it. Off by default. Applies to main plugin panels;
 popup styling remains with the shared popup service.
+
+License and credits
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor"), licensed GPL-3.0-or-later (see LICENSE).
+Humans + AI = Future. Built by Commander Thalinor in open collaboration with AI:
+Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). We say so proudly.
+See CREDITS.txt for more.

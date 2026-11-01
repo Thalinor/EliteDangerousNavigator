@@ -19,8 +19,10 @@ $Renames = [ordered]@{
     "Docking_Navigator"                  = "Navigator_Docking"
     "Ship_Radio"                         = "Navigator_Radio"
     "Voice_Navigator"                    = "Navigator_Voice"
-    "Neutron_Highway_Navigator"          = "Navigator_Neutron_Highway"
-    "Neutron_Highway_Navigator_Auto"     = "Navigator_Neutron_Highway_Auto"
+    "Neutron_Highway_Navigator"          = "Navigator_Navigation"
+    "Neutron_Highway_Navigator_Auto"     = "Navigator_Navigation"
+    "Navigator_Neutron_Highway"          = "Navigator_Navigation"
+    "Navigator_Neutron_Highway_Auto"     = "Navigator_Navigation"
 }
 # Files every plugin ships; anything else in an old folder is user data worth keeping.
 $CodeExtensions = @(".py", ".pyc", ".cs", ".exe", ".txt", ".md", ".json.bak")
@@ -41,9 +43,12 @@ if (Get-Process EDMarketConnector -ErrorAction SilentlyContinue) {
     Write-Host "EDMC is running. Close EDMC, then run this again. Nothing changed." -ForegroundColor Yellow; exit 2
 }
 if ($WhatIf) { Write-Host "Preview only (-WhatIf): nothing will be changed." -ForegroundColor Yellow }
-# Any other route edition follows the same pattern: Neutron_Highway_Navigator_X -> Navigator_Neutron_Highway_X.
-Get-ChildItem $plugins -Directory -Filter "Neutron_Highway_Navigator_*" | Where-Object { -not $Renames.Contains($_.Name) } |
-    ForEach-Object { $Renames[$_.Name] = "Navigator_Neutron_Highway_" + $_.Name.Substring("Neutron_Highway_Navigator_".Length) }
+# The Standard and Auto route editions are now one plugin, Navigator_Navigation. Any other route edition folder
+# (Neutron_Highway_Navigator_X or Navigator_Neutron_Highway_X) is moved aside the same way.
+foreach ($pattern in @("Neutron_Highway_Navigator_*", "Navigator_Neutron_Highway_*")) {
+    Get-ChildItem $plugins -Directory -Filter $pattern | Where-Object { -not $Renames.Contains($_.Name) } |
+        ForEach-Object { $Renames[$_.Name] = "Navigator_Navigation" }
+}
 
 $stamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $backup = Join-Path $plugins "_Navigator_old_backup"

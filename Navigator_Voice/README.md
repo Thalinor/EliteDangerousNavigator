@@ -279,3 +279,9 @@ parts of this release.
 Navigator Interface can force High Contrast Backgrounds on All Plugins. That
 override does not change Voice's saved individual choice; turning it off restores
 the individual setting. All contrast settings default off.
+
+License and credits
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor"), licensed GPL-3.0-or-later (see LICENSE).
+Humans + AI = Future. Built by Commander Thalinor in open collaboration with AI:
+Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). We say so proudly.
+See CREDITS.txt for more.

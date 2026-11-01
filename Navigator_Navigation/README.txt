@@ -1,4 +1,148 @@
-(N) Neutron Highway Auto 0.20.7 - TEST BUILD - 30 October 2026
+(N) Navigation 0.43.6 - TEST BUILD - 1 November 2026
+Required companion: (N) Interface 1.2.31 or newer. Install only this plugin for navigation; it replaces Neutron Highway Navigator.
+
+NEW 0.42.0: COLOURED TAGS. In the Jumps Left and Neutrons Left lists the tag in front of each star is coloured: (N) blue, (D) pale blue, and (F) green, yellow or red by how far the scoopable star is from the star you arrive at (green up to 500 ls, yellow up to 2,000 ls, red beyond; arriving at a scoopable star is always green). An (F) also appears for a system whose arrival star is not scoopable but (N) Cartography has seen a scoopable star in it. Distances are never guessed: nothing on record, no tag, no colour. The accessibility setting in (N) Interface (use theme colours) turns all of this off. The list is now a read-only text box; tap a name to copy it, drag to scroll, as before.
+0.42.1: the Navigation header is always Normal Text colour, even when it is the clickable settings menu (cog box off). Suite styling rule: plugin headers are never highlighted; the cog box is the visual cue that settings are there.
+
+
+0.43.0: SHORTCUT BAR (optional, off until you turn it on). In this plugin's settings, tick Show the shortcut bar, choose 3, 4 or 5 buttons, and give each a name (up to 10 letters) and a destination: a system, station or carrier, spelled as the galaxy map spells it. Use target fills the box from the system you have targeted or plotted in the game (or the one you are in); Clear empties a row. A row with no destination shows no button. The buttons sit under the header, centred, all the same size (as tall as the header boxes, about two and a half wide), and a tap does exactly what tapping a waypoint does (copy, or plot in the galaxy map when the A button is on map mode). The arrow on the right folds everything, bar included. Nothing is set by default.
+
+0.43.1: THE SHORTCUT BOXES LOOK THINGS UP. Type a few letters of a destination and a list appears under the box (systems, stations and carriers, from Spansh, the same lookup as Plot New Route): tap one and the exact spelling fills the box. Stray and doubled spaces are removed when you press OK. The blue count after Left now reads (N: 4) instead of (Neutrons: 4); other route types keep their own word (Stops, Jumps, Waypoints).
+
+0.43.2: the small left-hand arrow for hiding just the shortcut bar is gone (it covered the word Navigation when the header slid left). The right-hand arrow folds the whole panel, bar included.
+
+0.43.6: when the settings cog is switched on, it now sits directly next to the collapse arrow, with the S to its left (then A and R), so it lines up with the Commander Profile cog. With the cog off the stack is just S, then the collapse arrow. Settings buttons of any plugin belong right next to the collapse arrow.
+
+0.43.5: the S button now works on its own. It stays in the header and hides or shows the shortcut bar whether the panel is folded away (right-hand arrow) or not, so you can fold Navigation down to the header and keep just the bar. The bar's buttons also get the thin Normal Text outline set explicitly.
+
+0.43.4: in Settings, the Show the shortcut bar tick-box now sits directly above the place where you enter the shortcuts, not up with the other tick-boxes.
+
+0.43.3: THE S BUTTON. While the shortcut bar has something to show, a small S sits in the header between the A and the collapse arrow. It hides and shows just the bar: Normal Text colour while the bar is showing, Highlighted colour while it is hidden (your own EDMC colours, nothing red or green). It is made exactly like the R and A, so it gets the same flat, etched look. The bar's buttons now use the panel's own text size (the same as the lines below), so they are a little taller than the header boxes, one height and one width for all, as wide as the longest name needs. The arrow on the right still folds everything, S included.
+
+THE TABS
+  The panel has a row of tabs: Highway | Missions | Expedition | Rescue. Click a name to switch. Missions and Rescue can be
+  hidden in this plugin's settings (Show the Missions tab, Show the Rescue tab).
+  Press the tab row narrower and the names shrink to fit; they never wrap.
+
+HIGHWAY (the route you are flying)
+  Everything from the earlier versions: Current / Next / End, Jumps Done / Left, the progress bar, Auto-Route, fuel warnings.
+
+PLOT NEW ROUTE - ROUTE TYPES
+  Neutron Highway, Road to Riches, Ammonia Worlds, Earth-like Worlds, Rocky and HMC Worlds, Exomastery, Galaxy Plotter and
+  Multi-Stop Trip. The three world types use Spansh's Road to Riches search limited to those worlds; they share its settings.
+  Fleet Carrier (jumps and tritium restock stops) and Trade Router (buy-here, sell-there legs) use Spansh too.
+  - End System can be a system, a station or a fleet carrier. Carriers are found by their callsign (like H7H-7TZ) only, and
+    Spansh may hold an old position for a carrier, so check where it really is.
+  - A route always comes out. If Spansh cannot plot (uncharted space, an unknown system, a long gap) the plugin tries the next
+    best neutron, a wider reach, the nearest known system, a plain galaxy route, and finally a straight line, and tells you.
+  - Multi-Stop Trip: up to 20 stops. Each is Fixed (keeps its place) or Flexible (the plugin finds the best order). Options:
+    come back to the start, keep the last stop last. Trips can be saved and loaded in the same window.
+
+HIGHWAY LINES AND TAGS
+  Current is the waypoint you are on in your route (it changes only when you reach the next one). Next Jump is the very next
+  system to jump to, from the route plotted in the game (a dash if that leg is not plotted yet). Next Neutron is the next waypoint
+  (its word follows the route type), and End is the destination. In the Jumps Done / Left lists, (N) marks a neutron star and (F)
+  a star you can scoop (K G B F O A M), only where that is certain: the game's plotted route, your own jumps, and a neutron
+  route's waypoints. (D) marks a white dwarf: it supercharges the FSD too (by less than a neutron star), so white dwarfs count in the Neutrons number and list. No tag means not known or not useful. The Left list also says how many jumps your fuel lasts and how far the next scoopable
+  star is. Train Map Clicks is in Settings (N) Interface only, no longer in the Navigation menu.
+
+MISSIONS TAB
+  Your active missions, read from the game's journal as they happen: accepted (where it goes, the reward, when it expires),
+  redirected, completed, failed, abandoned. The tab is data only: Missions and Systems counts (tap Missions for the list), what
+  Expires First, the Rewards added up, and Next stop once a route is plotted. The list groups missions by the system they go to,
+  soonest first; tap a system to copy it. Missions you accepted before the plugin was running arrive at game start by name and
+  expiry only, so their details are looked up in your newest journal files on your own PC (Look Up Missing Details does it again).
+  Where a mission was taken is remembered. Kills, on-foot jobs and donations are handed in there (the list says "then hand in at
+  ..."); when the objective is done the game redirects the mission and the plugin tells you where to hand it in. Couriers, deliveries
+  and passengers finish at their destination. A donation has no destination, so it counts as a stop where you took it.
+  In the Navigation menu, the Missions drop-down has Plot Missions Route (one trip through every destination you still have time
+  for, shortest order, your mission systems marked *), Show Missions, Look Up Missing Details and Forget All Missions.
+
+EXPEDITION TAB
+  The tab is data only, so nothing can be tapped by accident on a long expedition: Next stop, Final stop, Jumps Done / Left (tap
+  Done or Left for the lists, tap a stop to copy it), Travelled (light years jumped) and Left (a straight line through your remaining
+  stops), Time travelled without pauses, the bar, and Pause (it becomes Resume). Everything else is in the one Navigation
+  menu (click the Navigation header, or the cog): Highway's items are at the top as always, then an Expedition drop-down (Plot
+  Expedition, Edit Stops, Show Stops, Order, Loop, Last stop stays last, Pause / Resume, Cancel Expedition, which asks first and
+  keeps your list of stops) and, when the Rescue tab is on, a Rescue drop-down (Add Rescue Cases, Show Cases, Case Done).
+  Up to 40 stops, imported from a CSV, the clipboard or typed (notes and web links in a file are ignored). Unknown systems stay
+  in the route and the last jumps to them are yours.
+
+RESCUE TAB
+  Built for rescue work (Fuel Rats, Hull Seals and the like). Now / Next, Case Done, Add Case, and a Cases list where finished
+  cases are crossed off. Add Rescue Cases has a switch: "Reorder the list by the most efficient route when plotting" On or Off,
+  and a Plot Route button. Restore Order in the Cases window undoes a reorder.
+
+ONE EDITOR EVERYWHERE
+  Expedition stops and Rescue cases use the same window: type a system, station or carrier callsign, make a selection from the
+  matches, and press Add. Move Up / Move Down / Remove / Clear List on the right. Paste, Save File and Load File along the
+  bottom, next to Save and Cancel. Save File writes a CSV (System Name, Located In) that Load File reads straight back.
+  Windows never hide their buttons: a window cannot be made smaller than its buttons.
+
+EXPEDITION BAR
+  Under Plot Expedition: a line with a dot for every stop you entered and a marker for where you are between them. The next stop
+  is ringed; passed stops are filled. A long expedition slides: the last stop passed stays at the left and the stops ahead follow.
+  The small - and + beside the bar show fewer or more stops (two at a time, 3 to 40). Tap a dot to copy its system to the clipboard (it never plots).
+
+PAUSE, RESCUE AND CARRYING ON
+  Expedition has a Pause word (it becomes Resume). Pausing sets the route aside so you can study an area. A rescue does the
+  same to a Highway or Expedition route that is loaded, so a rescue never wipes it. When the last rescue case is done you are asked
+  whether to resume. Go Back plots to where you left the route and carries on; Next Waypoint plots straight to the next one the
+  most efficient way (an expedition re-orders its remaining stops). Rescue and Highway also work completely on their own.
+
+MARKED STOPS
+  In the Done and Left lists of an Expedition or Rescue, the stops you entered start with * and use the highlighted colour. The
+  stars the plotter added in between are plain.
+
+LONG PLOTS
+  Plotting a route with many stops (Expedition, Rescue, Multi-Stop Trip) can take a while. A notice says so before it starts:
+  wait, and do not close EDMC until the route appears. Tick Do not show this again to hide it.
+
+WHAT IS SENT TO SPANSH
+  Start and end names, jump range, efficiency, the letters you type for suggestions, and for some routes your ship's FSD and
+  fuel numbers. Nothing else. No account or key is needed. EDSM is asked for coordinates of systems Spansh does not know.
+
+(N) Navigation 0.21.5 - TEST BUILD - 31 October 2026
+- FIX: Jumps Done and Left now move with EVERY jump, not only when you reach a neutron star. The route only lists the neutron
+  stars; the jumps between them are counted from your own jumps and from the route plotted in the game (the galaxy map's own
+  route). Done = jumps made so far, Left = jumps still to make; the blue number is the neutron stars still ahead.
+- Click Done to list every system you have jumped through since the route was loaded. Click Left to list the systems still ahead:
+  once the game's route to the next waypoint is plotted, that includes every system in between; otherwise only the neutron stars.
+- The Done/Left windows always open at a usable size (a tiny remembered size can no longer shrink them).
+
+(N) Navigation 0.21.4 - TEST BUILD - 31 October 2026
+(N) Navigation is the plugin that was Neutron Highway Navigator and its Auto edition. Install only this one; the Navigator cleanup
+tool moves the old Neutron Highway folders aside. Required companion: (N) Interface 1.2.31 or newer.
+
+THE HEADER
+  Navigation   [cog] [R] [A] [collapse]
+  - Navigation (the name): with the cog box turned off in this plugin's settings, clicking the name opens the menu (Plot New
+    Route, Load Route, Cancel Route, fuel safety, Train Map Clicks). With the cog on, the cog opens the menu and the name is plain.
+  - cog: the same menu. Optional (Settings > (N) Navigation > show the cog box).
+  - R: Auto-Route. A plain R in the "on" colour means it is on: after you supercharge at a neutron star (and you are in the
+    cockpit) it waits a few seconds, then plots the next waypoint in the galaxy map for you. A struck-through R in the "off"
+    colour means it is off. It never starts the jump; you still aim and jump yourself.
+  - A / copy symbol: appears only when Galaxy map shortcuts is on in (N) Interface. Copy symbol: clicking Current / Next / End
+    copies the system name. Green A: clicking one plots a route to it in the galaxy map. Click the button to switch.
+  - collapse: hides the route lines.
+  The R and A are the same size as the other boxes on purpose. The colours follow (N) Interface's colour setting.
+
+THE ROUTE LINES
+  Current / Next / End are clickable names (Highlighted Text). Jumps Done: 10 | Left: 7 (2 neutrons): Done and Left count REAL
+  jumps (the plotter reports the jumps each leg takes); the blue number in brackets is the neutron stars (or stops) still ahead.
+  Click Done or Left to list the systems.
+
+PLOTTING
+  Plot New Route asks first if a route is already loaded ("You are on a Neutron Highway route ... Clear it and plot a new route?"),
+  so two routes can never get mixed up. Every plotted route is also saved as a CSV (with a Jumps column) in the plugin's data
+  folder under plotted_routes; Load Route reads it back with the jump counts.
+
+CHANGES IN THIS VERSION
+  Standard and Auto editions merged; click-a-name instead of the old copy and compass icons; Auto-Route moved from a bottom line to
+  the R in the header; the cog is optional and sits in the header stack; map training moved to (N) Interface; one colour setting.
+
+Earlier notes (this plugin was (N) Neutron Highway Auto):(N) Neutron Highway Auto 0.20.8 - TEST BUILD - 30 October 2026
+Settings now use Navigator Interface's shared scrolling service.
 Folder renamed: this plugin now installs as plugins\Navigator_Neutron_Highway_Auto (was Neutron_Highway_Navigator_Auto).
 All suite folders now start with Navigator_, matching the (N) names in EDMC.
 UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
@@ -739,3 +883,9 @@ High Contrast Backgrounds (25 October 2026)
 High Contrast Background is available on this plugin's EDMC settings page
 and defaults off. Navigator Interface applies it and can force it on for all
 main plugin panels. Turning off the force option restores individual choices.
+
+License and credits
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor"), licensed GPL-3.0-or-later (see LICENSE).
+Humans + AI = Future. Built by Commander Thalinor in open collaboration with AI:
+Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). We say so proudly.
+See CREDITS.txt for more.

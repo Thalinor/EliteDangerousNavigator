@@ -1,4 +1,25 @@
-(N) Cartography 0.3.11 - TEST BUILD - 30 October 2026
+(N) Cartography 0.3.23 - TEST BUILD - 1 November 2026
+
+NEW 0.3.23: the Visited line in Exploration > Overview is coloured by how much of the system is scanned: green while nothing is scanned yet (First Discovery!, Honked, Known), yellow for Partially Scanned, red for Fully Scanned, so you can tell on arrival without reading. The accessibility setting in (N) Interface (use theme colours) turns it off.
+
+NEW 0.3.22: with no fuel star, the Fuel Star line (Fuel Distance: None) is plain text, not a Highlighted click that copied the star you arrive at.
+
+NEW 0.3.21: Fuel Distance says None (not None in system) when the system has no scoopable star.
+
+NEW 0.3.20: the Fuel Star lines in Exploration > Overview are coloured by how far the scoopable star is from the star you arrive at: green up to 500 ls, yellow up to 2,000 ls, red beyond. (N) Navigation uses the same distances for the (F) tags in its lists. The accessibility setting in (N) Interface (use theme colours) turns the colouring off. Distances never guessed: no distance on record, no colour.
+
+FIX 0.3.19: long values (Allegiance, Powerplay, Controlling Faction...) now wrap to the width left after the widest caption, so they are no longer cut off at the panel edge.
+Exploration > Overview, fuel stars:
+- "Fuel Star: Yes | Fuel Distance: Primary Star" is one clickable line; clicking it copies the name of the nearest fuel star. Every
+  other fuel star in the system is listed under it, one per line with its full name and distance; click one to copy its name.
+- After a honk, when every star found so far cannot be scooped, both fields say "None found" instead of "Unknown" (the game does
+  not list companion stars after a honk, so "None found" is the honest wording).
+- "Visited: Honked" appears only when a local honk was recorded this visit; a system others already scanned shows "Known".
+There is deliberately NO copy/auto map button here: the galaxy map cannot select a body inside the system you are already in,
+so Cartography only copies names. Required companion: (N) Interface 1.2.31 or newer.
+
+(N) Cartography 0.3.12 - TEST BUILD - 30 October 2026
+Visited says “Honked” only when a local FSS discovery-scan event is recorded; incomplete fuel data remains Unknown.
 Folder renamed: this plugin now installs as plugins\Navigator_Cartography (was Systems_Navigator).
 All suite folders now start with Navigator_, matching the (N) names in EDMC.
 UPGRADING: close EDMC, extract the new ZIP, then run the Navigator folder cleanup tool
@@ -114,6 +135,8 @@ Exploration: Overview and Bodies.
   Overview retains the established star/neutron/scoopable-star/discovery facts,
   adds body identifications this visit and mapped bodies from your available journals.
   Fuel distance is from arrival, not continuously from your moving ship.
+  Only a local FSS discovery-scan event means “Honked”. Arrival scan metadata and
+  EDSM body data can show other known/scan states without implying a honk this visit.
   Fully Scanned refers to known/FSS-identified bodies, not full surface mapping.
   Bodies lists known stars, planets and moons, distance, landability and known
   surface sites. Click names to copy. Unknown does not mean an absent body/site.
@@ -194,3 +217,9 @@ High Contrast Backgrounds (25 October 2026)
 High Contrast Background is available on this plugin's EDMC settings page
 and defaults off. Navigator Interface applies it and can force it on for all
 main plugin panels. Turning off the force option restores individual choices.
+
+License and credits
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor"), licensed GPL-3.0-or-later (see LICENSE).
+Humans + AI = Future. Built by Commander Thalinor in open collaboration with AI:
+Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). We say so proudly.
+See CREDITS.txt for more.
