@@ -1,4 +1,5 @@
-(N) Voice 0.2.8 - TEST BUILD - 31 October 2026
+(N) Voice 0.2.9 - TEST BUILD - 1 November 2026
+NEW 0.2.9: text continuity: the speech preview says (N) Voice test (it used the old plugin name).
 NEW 0.2.8: The collapse (minimise) button is Normal Text colour like every other plugin's, instead of Highlighted Text. Nothing else about its colours changed: the Listen button still shows Highlighted while listening and Normal while stopped (or green/red if 'listen status colours' is on).
 Finds the route plugin under its new name, (N) Navigation (folder Navigator_Navigation).
 

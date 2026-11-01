@@ -228,7 +228,7 @@ class RadioSettings:
                 if isinstance(names,str):names=[names]
                 self.voices=['Windows Default']+list(names)
                 self.voice_box.configure(values=self.voices)
-                self.voice_status.configure(text='Installed Voices Loaded. Pitch Response Varies By Voice.')
+                self.voice_status.configure(text='Installed voices loaded. Pitch response varies by voice.')
             elif event.get('ev') in ('error','notice'):
                 self.voice_status.configure(text=event.get('msg') or 'Voice Preview Unavailable')
                 if event.get('ev')=='error':self.preview_busy=False

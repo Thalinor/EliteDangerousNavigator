@@ -35,13 +35,13 @@ The suite ZIP contains:
 | Plugin | Version | Panel |
 | --- | --- | --- |
 | (N) Interface (required) | 1.2.59 | Styles the whole window, Commander Profile |
-| (N) Navigation | 0.43.6 | Navigation (routes, missions, expedition, rescue, shortcut bar) |
-| (N) Dashboard | 0.6.19 | Dashboard |
+| (N) Navigation | 0.43.7 | Navigation (routes, missions, expedition, rescue, shortcut bar) |
+| (N) Dashboard | 0.6.20 | Dashboard |
 | (N) Cartography | 0.3.23 | Cartography |
-| (N) Docking | 0.4.8 | Docking (appears automatically) |
-| (N) Radio | 0.1.15 | Radio |
+| (N) Docking | 0.4.9 | Docking (appears automatically) |
+| (N) Radio | 0.1.16 | Radio |
 | (N) Tools | 0.2.1 | Tools (notes and calculator) |
-| (N) Voice | 0.2.8 | Voice |
+| (N) Voice | 0.2.9 | Voice |
 
 All suite plugins start with **(N)** in EDMC, so their settings tabs and panels sit side by side.
 Their folders start with `Navigator_` to match. (N) Navigation replaces the old Neutron Highway Navigator and its Auto edition.
@@ -64,13 +64,13 @@ All releases are listed on the [Releases page](https://github.com/Thalinor/Elite
 | --- | --- | --- |
 | **Navigator Suite (all plugins)** | this page | [Suite 2026-10-31](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-suite-2026-10-31) |
 | (N) Interface (required) | [README](Navigator_Interface) | [1.2.59](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-interface-v1.2.59) |
-| (N) Navigation | [README](Navigator_Navigation) | [0.43.6](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-navigation-v0.43.6) |
-| (N) Dashboard | [README](Navigator_Dashboard) | [0.6.19](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-dashboard-v0.6.19) |
+| (N) Navigation | [README](Navigator_Navigation) | [0.43.7](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-navigation-v0.43.7) |
+| (N) Dashboard | [README](Navigator_Dashboard) | [0.6.20](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-dashboard-v0.6.20) |
 | (N) Cartography | [README](Navigator_Cartography) | [0.3.23](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-cartography-v0.3.23) |
-| (N) Docking | [README](Navigator_Docking) | [0.4.8](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-docking-v0.4.8) |
-| (N) Radio | [README](Navigator_Radio) | [0.1.15](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-radio-v0.1.15) |
+| (N) Docking | [README](Navigator_Docking) | [0.4.9](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-docking-v0.4.9) |
+| (N) Radio | [README](Navigator_Radio) | [0.1.16](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-radio-v0.1.16) |
 | (N) Tools | [README](Navigator_Tools) | [0.2.1](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-tools-v0.2.1) |
-| (N) Voice | [README](Navigator_Voice) | [0.2.8](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-voice-v0.2.8) |
+| (N) Voice | [README](Navigator_Voice) | [0.2.9](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-voice-v0.2.9) |
 | Folder cleanup tool (upgrading) | [README](_Navigator_Cleanup) | included in every release above |
 
 Each release lists the SHA-256 checksum of its ZIP so you can verify your download.

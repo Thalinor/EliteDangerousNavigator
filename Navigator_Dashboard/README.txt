@@ -1,4 +1,5 @@
-(N) Dashboard 0.6.19 - TEST BUILD - 31 October 2026
+(N) Dashboard 0.6.20 - TEST BUILD - 1 November 2026
+NEW 0.6.20: text continuity: the fleet carrier heading reads All Your Fleet Carriers, the clipboard message and the History Recovery and Backup box title follow the suite's capitals.
 
 NEW 0.6.19: the Trip rate reads J/hr (jumps an hour) and Ly/hr, with the word Jumps dropped.
 0.6.18: plugin headers are always Normal Text colour, even when clickable (suite styling rule).
@@ -159,7 +160,7 @@ Previous 0.6.0 improvements:
 
 
 HISTORY RECOVERY AND BACKUP (0.6.7)
-File > Settings > Ship Computer > History Recovery And Backup.
+File > Settings > (N) Dashboard > History Recovery and Backup.
 These actions take effect when clicked, independently of Settings Apply/Cancel.
 All file reading and online downloads run in workers; EDMC remains usable.
 

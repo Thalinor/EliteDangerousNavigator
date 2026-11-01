@@ -1,4 +1,5 @@
-(N) Navigation 0.43.6 - TEST BUILD - 1 November 2026
+(N) Navigation 0.43.7 - TEST BUILD - 1 November 2026
+NEW 0.43.7: text continuity: the place-search message uses the same ellipsis (…) as the rest of the suite.
 Required companion: (N) Interface 1.2.31 or newer. Install only this plugin for navigation; it replaces Neutron Highway Navigator.
 
 NEW 0.42.0: COLOURED TAGS. In the Jumps Left and Neutrons Left lists the tag in front of each star is coloured: (N) blue, (D) pale blue, and (F) green, yellow or red by how far the scoopable star is from the star you arrive at (green up to 500 ls, yellow up to 2,000 ls, red beyond; arriving at a scoopable star is always green). An (F) also appears for a system whose arrival star is not scoopable but (N) Cartography has seen a scoopable star in it. Distances are never guessed: nothing on record, no tag, no colour. The accessibility setting in (N) Interface (use theme colours) turns all of this off. The list is now a read-only text box; tap a name to copy it, drag to scroll, as before.

@@ -39,7 +39,7 @@ except ImportError:                      # loaded as a plain (non-package) plugi
 
 TITLE = "(N) Dashboard"
 HEADER_TITLE = "Dashboard"
-VERSION = "0.6.19"
+VERSION = "0.6.20"
 PREFIX = "ShipComputer_"
 PLUGIN_NAME = os.path.basename(os.path.dirname(__file__))
 logger = logging.getLogger(f"{appname}.{PLUGIN_NAME}")
@@ -538,7 +538,7 @@ def _stats_view() -> tuple[str, dict | None]:
     if scope == "type":
         same = [(k, v) for k, v in combined.items()
                 if v["kind"] == current["kind"] and v["type"] == current["type"]]
-        title = "All Your fleet carriers" if current["kind"] == "carrier" else f"All Your {_ship_model(current['type'])}s"
+        title = "All Your Fleet Carriers" if current["kind"] == "carrier" else f"All Your {_ship_model(current['type'])}s"
         result = aggregate(same)
         if not any(k == key for k, _ in same):
             result["seconds"] += extra  # live vessel has not produced its first cached record
@@ -1061,7 +1061,7 @@ class RecipePopup(tk.Toplevel):
             self.clipboard_append(name)
             self.status.configure(text='Copied: ' + name)
         except tk.TclError:
-            self.status.configure(text='Clipboard Busy. Please Try Again.')
+            self.status.configure(text='Clipboard busy. Please try again.')
         return 'break'
 
     def sync_theme(self):

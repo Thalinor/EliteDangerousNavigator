@@ -1,4 +1,5 @@
-(N) Docking 0.4.8 - TEST BUILD - 30 October 2026
+(N) Docking 0.4.9 - TEST BUILD - 1 November 2026
+NEW 0.4.9: every heading is capitalised the same way: Docking Requested, Docking Granted (as in PAD 14 · Docking Granted), Docking Denied, Docking Timed Out and Docking Cancelled. The longer messages underneath are unchanged.
 Settings now use Navigator Interface's shared scrolling service.
 Folder renamed: this plugin now installs as plugins\Navigator_Docking (was Docking_Navigator).
 All suite folders now start with Navigator_, matching the (N) names in EDMC.

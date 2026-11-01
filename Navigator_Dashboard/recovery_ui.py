@@ -236,7 +236,7 @@ class Recovery:
             pass
 
     def build(self, parent, row):
-        box = ttk.LabelFrame(parent, text='History Recovery And Backup')
+        box = ttk.LabelFrame(parent, text='History Recovery and Backup')
         box.grid(row=row, column=0, sticky='ew', padx=10, pady=10)
         for i, (label, action) in enumerate((('Import Archived Journals…', self.import_journals),
                 ('Export Dashboard Backup…', self.export_backup), ('Restore Dashboard Backup…', self.restore_backup),

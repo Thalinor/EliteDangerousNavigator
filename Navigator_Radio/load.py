@@ -38,7 +38,7 @@ logger = logging.getLogger(f"{appname}.{os.path.basename(os.path.dirname(__file_
 
 TITLE = "(N) Radio"
 HEADER_TITLE = "Radio"
-VERSION = "0.1.15"
+VERSION = "0.1.16"
 SEP = "  |  "
 SOURCES = ("galnet", "dw3", "streams", "music")
 SOURCE_LABELS = {"galnet": "Galnet", "dw3": "Distant Radio", "streams": "Streams", "music": "Music"}

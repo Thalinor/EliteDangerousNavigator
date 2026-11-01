@@ -1,4 +1,5 @@
-(N) Radio 0.1.15 - TEST BUILD - 31 October 2026
+(N) Radio 0.1.16 - TEST BUILD - 1 November 2026
+NEW 0.1.16: text continuity: the voice-list message in Settings is a normal sentence (Installed voices loaded. Pitch response varies by voice.).
 NEW 0.1.15: The small filled circle beside the Radio header is gone. It only marked an unread Galnet article, so it meant nothing while playing streams and only cleared once you changed source. Galnet playback itself is unchanged.
 (0.1.14, 30 October 2026)
 Settings now use Navigator Interface's shared scrolling service; its table-specific scrollbars remain local.

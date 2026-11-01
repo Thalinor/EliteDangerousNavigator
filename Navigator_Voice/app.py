@@ -249,10 +249,10 @@ class Navigator:
         self.render()
     def preview_tts(self, settings):
         if self.listening and not self.starting:
-            self.host.speak("Voice Navigator test.", settings)
+            self.host.speak("(N) Voice test.", settings)
             self.log("TTS preview sent to the active speech host")
             return
-        self.host.start(settings, [], mode="tts_preview", text="Voice Navigator test.")
+        self.host.start(settings, [], mode="tts_preview", text="(N) Voice test.")
         self.status_text = "TTS Preview"
         self.render()
     def cancel_macro(self):

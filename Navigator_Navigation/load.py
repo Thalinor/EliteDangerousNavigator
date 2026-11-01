@@ -30,7 +30,7 @@ logger = get_main_logger()
 TITLE = "(N) Navigation"            # plugin name (About, EDMC plugin list, logs)
 HEADER = "Navigation"   # panel header: the same in every edition
 INTERNAL_BANNER = ""
-VERSION = "0.43.6"
+VERSION = "0.43.7"
 PLUGIN_DIR = os.path.dirname(os.path.abspath(__file__))
 FOLDER = os.path.basename(PLUGIN_DIR)         # the key (N) Interface keeps this plugin's copy/auto choice under
 DATA_DIR = PLUGIN_DIR
@@ -5590,7 +5590,7 @@ def _open_place_editor(title: str, intro: str, items: list[dict[str, str]], on_s
         if not text:
             return
         if state["busy"] or state["lookup"] is not None:
-            note.configure(text="Still searching... press Add again in a moment.")
+            note.configure(text="Still searching… press Add again in a moment.")
             return
         picked = state["picked"] if state["picked"] and state["picked"]["name"].casefold() == text.casefold() else None
         if picked is None:

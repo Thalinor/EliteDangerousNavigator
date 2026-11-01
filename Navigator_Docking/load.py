@@ -18,7 +18,7 @@ from .render import exterior, interior, interior_flat, carrier, render_scene
 
 TITLE = "(N) Docking"
 HEADER_TITLE = "Docking"
-VERSION = "0.4.8"
+VERSION = "0.4.9"
 PREFIX = "DockingNavigator_"
 logger = logging.getLogger(f"{appname}.Navigator_Docking")
 _model = DockingState()
@@ -248,9 +248,9 @@ class DockingView(tk.Frame):
         self.hint.configure(foreground=normal_text)
         self.caption.configure(foreground=normal_text)
         self.canvas.configure(background=background, width=size, height=size)
-        headings = {"idle": "Ready", "pending": "Docking requested", "denied": "Docking denied",
-                    "timeout": "Docking timed out", "cancelled": "Docking cancelled", "docked": "Docked"}
-        heading = f"PAD {model.pad:02d} · Docking granted" if model.phase == "granted" and model.pad else headings.get(model.phase, "Docking granted")
+        headings = {"idle": "Ready", "pending": "Docking Requested", "denied": "Docking Denied",
+                    "timeout": "Docking Timed Out", "cancelled": "Docking Cancelled", "docked": "Docked"}
+        heading = f"PAD {model.pad:02d} · Docking Granted" if model.phase == "granted" and model.pad else headings.get(model.phase, "Docking Granted")
         self.header.configure(text=heading)
         self.station.configure(text=model.display_station or model.station)
         self.message.configure(text=model.message)
@@ -638,7 +638,7 @@ def plugin_prefs(parent, cmdr, is_beta):
     Entry(frame, textvariable=_prefs["size"], width=6).grid(row=row, column=1, sticky="w")
     nb.Label(frame, text="Denial / timeout display (5–60 seconds)").grid(row=row + 1, column=0, sticky="w", padx=10, pady=6)
     Entry(frame, textvariable=_prefs["seconds"], width=6).grid(row=row + 1, column=1, sticky="w")
-    ttk.Button(frame, text="Preview Diagrams And Denial Message…", command=lambda: _preview(frame)).grid(
+    ttk.Button(frame, text="Preview Diagrams and Denial Message…", command=lambda: _preview(frame)).grid(
         row=row + 2, columnspan=2, sticky="w", padx=10, pady=10)
     nb.Label(frame, text="Idle display stays compact. Pad guidance clears when you dock or leave.\n"
                         "Unsupported layouts still show your assigned pad number.\n"
