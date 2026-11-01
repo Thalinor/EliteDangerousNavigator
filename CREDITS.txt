@@ -17,3 +17,6 @@ Elite Dangerous Market Connector (EDMC) and its plugin community, and the public
 data services some plugins use where their README says so (for example Spansh and
 EDSM). Where a plugin adapts someone else's work, NOTICE.txt (if present) says what
 and from whom.
+
+ADAPTED WORK
+(N) Explorer adapts parts of Pioneer by Jeremy Rimpo (GPL-2.0-or-later), and uses the exploration value formulae of MattG. See Navigator_Explorer/NOTICE.txt.

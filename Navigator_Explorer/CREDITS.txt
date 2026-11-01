@@ -1,0 +1,23 @@
+(N) Explorer
+Copyright (C) 2026 Jonathan Estok ("Commander Thalinor")
+SPDX-License-Identifier: GPL-3.0-or-later
+
+This program is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License, version 3 or (at your option) any later
+version. It is distributed without warranty. See LICENSE.
+
+HUMANS + AI = FUTURE
+This project was made by Commander Thalinor (Jonathan Estok) in open collaboration
+with AI: Claude (Anthropic), ChatGPT (OpenAI) and Gemini (Google). The AI systems
+did a great deal of the work and are credited here, proudly and on purpose. The
+copyright is held by the human author; credit is not a legal claim.
+
+THANKS
+Elite Dangerous Market Connector (EDMC) and its plugin community, and the public
+data services some plugins use where their README says so (for example Spansh and
+EDSM). Where a plugin adapts someone else's work, NOTICE.txt (if present) says what
+and from whom.
+
+
+ADAPTED WORK
+Pioneer by Jeremy Rimpo (GPL-2.0-or-later) and the exploration value formulae of MattG. See NOTICE.txt for exactly what and where.

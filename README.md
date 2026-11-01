@@ -35,12 +35,13 @@ The suite ZIP contains:
 | Plugin | Version | Panel |
 | --- | --- | --- |
 | (N) Interface (required) | 1.2.59 | Styles the whole window, Commander Profile |
-| (N) Navigation | 0.43.7 | Navigation (routes, missions, expedition, rescue, shortcut bar) |
+| (N) Navigation | 0.43.9 | Navigation (routes, missions, expedition, rescue, shortcut bar) |
 | (N) Dashboard | 0.6.20 | Dashboard |
 | (N) Cartography | 0.3.23 | Cartography |
 | (N) Docking | 0.4.9 | Docking (appears automatically) |
 | (N) Radio | 0.1.16 | Radio |
 | (N) Tools | 0.2.1 | Tools (notes and calculator) |
+| (N) Explorer | 0.1.3 | Explorer (exploration values and a surface map) |
 | (N) Voice | 0.2.9 | Voice |
 
 All suite plugins start with **(N)** in EDMC, so their settings tabs and panels sit side by side.
@@ -62,14 +63,15 @@ All releases are listed on the [Releases page](https://github.com/Thalinor/Elite
 
 | Plugin | Page | Download |
 | --- | --- | --- |
-| **Navigator Suite (all plugins)** | this page | [Suite 2026-10-31](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-suite-2026-10-31) |
+| **Navigator Suite (all plugins)** | this page | [Suite 2026-11-01](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-suite-2026-11-01) |
 | (N) Interface (required) | [README](Navigator_Interface) | [1.2.59](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-interface-v1.2.59) |
-| (N) Navigation | [README](Navigator_Navigation) | [0.43.7](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-navigation-v0.43.7) |
+| (N) Navigation | [README](Navigator_Navigation) | [0.43.9](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-navigation-v0.43.9) |
 | (N) Dashboard | [README](Navigator_Dashboard) | [0.6.20](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-dashboard-v0.6.20) |
 | (N) Cartography | [README](Navigator_Cartography) | [0.3.23](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-cartography-v0.3.23) |
 | (N) Docking | [README](Navigator_Docking) | [0.4.9](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-docking-v0.4.9) |
 | (N) Radio | [README](Navigator_Radio) | [0.1.16](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-radio-v0.1.16) |
 | (N) Tools | [README](Navigator_Tools) | [0.2.1](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-tools-v0.2.1) |
+| (N) Explorer | [README](Navigator_Explorer) | [0.1.3](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-explorer-v0.1.3) |
 | (N) Voice | [README](Navigator_Voice) | [0.2.9](https://github.com/Thalinor/EliteDangerousNavigator/releases/tag/navigator-voice-v0.2.9) |
 | Folder cleanup tool (upgrading) | [README](_Navigator_Cleanup) | included in every release above |
 
@@ -78,6 +80,8 @@ Each release lists the SHA-256 checksum of its ZIP so you can verify your downlo
 ## Individual plugins
 
 Everything should be working correctly together with (N) Interface.  Let me know if you find bugs!
+
+(N) Explorer is our own take on the exploration-value panel that Pioneer made familiar, plus a surface map. It adapts parts of Pioneer by Jeremy Rimpo (GPL-2.0-or-later, used here under version 3 or later) and says so in its NOTICE.txt. It works on its own: it does not need ExploData or any other plugin.
 
 Note: (N) Voice is a work in progress.  It does *NOT* require Voice Attack, HCS Voice Packs,
 or anything else as it was designed to be a REPLACEMENT for those software packages.

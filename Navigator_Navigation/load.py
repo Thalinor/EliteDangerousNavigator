@@ -30,7 +30,7 @@ logger = get_main_logger()
 TITLE = "(N) Navigation"            # plugin name (About, EDMC plugin list, logs)
 HEADER = "Navigation"   # panel header: the same in every edition
 INTERNAL_BANNER = ""
-VERSION = "0.43.7"
+VERSION = "0.43.9"
 PLUGIN_DIR = os.path.dirname(os.path.abspath(__file__))
 FOLDER = os.path.basename(PLUGIN_DIR)         # the key (N) Interface keeps this plugin's copy/auto choice under
 DATA_DIR = PLUGIN_DIR
@@ -439,12 +439,9 @@ def _refresh_route_label() -> None:
             widget.grid()
         else:
             widget.grid_remove()
-    if _collapse_button is not None:
-        if _route_systems:
-            _collapse_button["text"] = "🔽" if _settings.get("collapsed") else "🔼"
-            _collapse_button.grid()
-        else:
-            _collapse_button.grid_remove()
+    if _collapse_button is not None:          # always there: the tabs and shortcut bar fold away with or without a route
+        _collapse_button["text"] = "🔽" if _settings.get("collapsed") else "🔼"
+        _collapse_button.grid()
     if _current_label is not None:
         _current_label.configure(text=f"Current: {current or '—'}")
         _jump_label.configure(text=f"Next Jump: {_next_jump_system() or '—'}")
@@ -461,7 +458,7 @@ def _refresh_route_label() -> None:
     _refresh_missions()
     _sync_shortcuts()
     if _mode_button is not None:
-        # Like the collapse button, the copy/auto toggle only shows while there is a route.
+        # The copy/auto toggle only shows while there is a route (the collapse button is always there).
         _mode_button.navigator_hidden = not _route_systems
         _interface("navigator_sync_mode_buttons")
     _sync_header_buttons()
@@ -5145,7 +5142,7 @@ def _refresh_expedition() -> None:
                                        f"{', ' + str(left_stops) + ' stops left' if left_stops else ''}. Press Resume.")
         _exp_ui["hint"].grid()
     elif not loaded:
-        _exp_ui["hint"].configure(text="No expedition loaded. Use the Navigation menu, then Expedition.")
+        _exp_ui["hint"].configure(text="None Loaded\nUse the Navigation Menu, then Expedition.")
         _exp_ui["hint"].grid()
     else:
         _exp_ui["hint"].grid_remove()
@@ -5357,8 +5354,9 @@ def _build_expedition_page(page: tk.Frame) -> None:
                 label.bind(sequence, lambda _event: command())
         return label
 
-    hint = tk.Label(page, anchor=tk.W, justify=tk.LEFT, wraplength=320)
-    hint.grid(row=0, column=0, sticky=tk.W)
+    page.columnconfigure(0, weight=1)
+    hint = tk.Label(page, anchor=tk.CENTER, justify=tk.CENTER, wraplength=320)      # a short notice: centred, as few words as possible
+    hint.grid(row=0, column=0, sticky=tk.EW)
     _exp_ui["hint"] = hint
     data = tk.Frame(page)
     data.grid(row=1, column=0, sticky=tk.W)
@@ -6070,7 +6068,7 @@ def _rescue_make_room() -> bool:
 def _parked_summary(parked: dict[str, Any]) -> str:
     left = max(0, len(parked["systems"]) - 1 - int(parked.get("index") or 0))
     what = "Expedition" if parked.get("source") == "expedition" else "Route"
-    return f"{what} parked at {parked.get('at') or parked['systems'][0]}, {left} waypoint{'s' if left != 1 else ''} left"
+    return f"{what} Parked at {parked.get('at') or parked['systems'][0]}: {left} Waypoint{'s' if left != 1 else ''} Left"
 
 
 def _refresh_parked() -> None:
@@ -6842,7 +6840,7 @@ def _refresh_missions() -> None:
     data = _missions()
     groups = [group for group in _mission_groups() if group[0]]
     if not data:
-        _miss_ui["hint"].configure(text="No active missions yet. They appear here as you accept them in the game.")
+        _miss_ui["hint"].configure(text="No Active Missions")
         _miss_ui["hint"].grid()
         _miss_ui["data"].grid_remove()
         return
@@ -6899,8 +6897,9 @@ def _build_missions_page(page: tk.Frame) -> None:
                 label.bind(sequence, lambda _event: command())
         return label
 
-    hint = tk.Label(page, anchor=tk.W, justify=tk.LEFT, wraplength=320)
-    hint.grid(row=0, column=0, sticky=tk.W)
+    page.columnconfigure(0, weight=1)
+    hint = tk.Label(page, anchor=tk.CENTER, justify=tk.CENTER, wraplength=320)      # a short notice: centred, as few words as possible
+    hint.grid(row=0, column=0, sticky=tk.EW)
     _miss_ui["hint"] = hint
     data = tk.Frame(page)
     data.grid(row=1, column=0, sticky=tk.W)

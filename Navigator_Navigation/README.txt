@@ -1,4 +1,6 @@
-(N) Navigation 0.43.7 - TEST BUILD - 1 November 2026
+(N) Navigation 0.43.9 - TEST BUILD - 1 November 2026
+NEW 0.43.9: shorter notices, centred, with the suite's capitals: Missions says No Active Missions (one line); Expedition says None Loaded and, under it, Use the Navigation Menu, then Expedition; the parked line reads Route Parked at Sol: 6 Waypoints Left | Resume.
+NEW 0.43.8: the collapse arrow is always there. It used to show only while a route was loaded, so with the route cleared you could not fold away the tabs (Highway, Missions, Expedition, Rescue) and the shortcut bar. Only the copy/auto box still waits for a route.
 NEW 0.43.7: text continuity: the place-search message uses the same ellipsis (…) as the rest of the suite.
 Required companion: (N) Interface 1.2.31 or newer. Install only this plugin for navigation; it replaces Neutron Highway Navigator.
 
